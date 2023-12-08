@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const githubURL = process.env.GITHUB_URL;
-const linkedinhubURL = process.env.LINKEDIN_URL;
+const linkedinURL = process.env.LINKEDIN_URL;
 
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
@@ -60,7 +60,7 @@ const EmailSection = () => {
           <a href={`${githubURL}`}>
             <Image src="/github-icon.svg" alt="Github Icon"  width={45} height={45} />
           </a>
-          <a href={`${linkedinhubURL}`}>
+          <a href={`${linkedinURL}`}>
             <Image src="/linkedin-icon.svg" alt="Linkedin Icon" width={45} height={45} />
           </a>
         </div>
