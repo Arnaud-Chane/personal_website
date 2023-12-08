@@ -65,13 +65,30 @@ const HeroSection = () => {
             <Image
               src="/images/hero-image.png"
               alt="hero image"
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full w-11/12"
               width={300}
               height={300}
             />
           </div>
         </motion.div>
       </div>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+        className="col-span-4 place-self-center mt-4 lg:mt-0"
+      >
+        <div className="flex flex-row justify-center">
+          {" "}
+          <Image
+            className="animate-bounce mt-52"
+            src="/images/down-chevron.svg"
+            alt="down arrow"
+            width={50}
+            height={50}
+          />
+        </div>
+      </motion.div>
     </section>
   );
 };
