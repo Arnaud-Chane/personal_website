@@ -80,13 +80,15 @@ const HeroSection = () => {
       >
         <div className="flex flex-row justify-center">
           {" "}
-          <Image
-            className="animate-bounce mt-52"
-            src="/images/down-chevron.svg"
-            alt="down arrow"
-            width={50}
-            height={50}
-          />
+          <Link href="/#about">
+            <Image
+              className="animate-bounce mt-40 lg:mt-52 mb-24 lg:mb-10"
+              src="/images/down-chevron.svg"
+              alt="down arrow"
+              width={50}
+              height={50}
+            />
+          </Link>
         </div>
       </motion.div>
     </section>
