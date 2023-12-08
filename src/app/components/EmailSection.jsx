@@ -5,6 +5,9 @@ import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 
+const githubURL = process.env.GITHUB_URL;
+const linkedinhubURL = process.env.LINKEDIN_URL;
+
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
 
@@ -56,10 +59,10 @@ const EmailSection = () => {
           try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
+          <Link href={`${githubURL}`}>
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="linkedin.com">
+          <Link href={`${linkedinhubURL}`}>
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
         </div>
